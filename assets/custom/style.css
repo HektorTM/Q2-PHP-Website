@@ -1,0 +1,407 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-position: top;
+	background-size: 87%;
+	background-attachment: fixed;
+}
+
+input {
+	padding: 5px 5px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background:rgba(0, 0, 0, 0);
+  padding: 10px;
+}
+
+footer {
+	position: center;
+	offset-position: bottom;
+	width: 15%;
+	text-align: center;
+	margin-left: 40%;
+	color: white;
+	align-content: center;
+	padding: 10px;
+} 
+
+header img {
+  justify-content: center;
+}
+
+
+
+td {
+  margin: 5px;
+}
+
+th {
+  font-size: 50px;
+  font-style: oblique;
+}
+
+
+/*         */
+/* GENERAL */
+/*         */
+
+.logo {
+  width: 646px;
+  height: 283px;
+  margin-left: 7%;
+}
+
+.nonagram {
+	align-content: center;
+	margin-right: 14rem;
+}
+
+.nav-left {
+  left: 0;
+  margin-left: 17rem;
+  text-decoration: none;
+}
+
+.nav-right {
+  right: 0;
+  margin-right: 27rem;
+  
+}
+
+.nav-inner ul li a {
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1,2px;
+	position: absolute;
+	text-decoration: none;
+}
+
+
+/* Social Media */
+.socialmedia {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.gap {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.spotify {
+	width: 50px;
+	height: 50px;
+	transition-duration: 0.4;
+	border-radius: 50%;
+}
+
+.spotify:hover {
+	background-color: #1ED760;
+}
+.youtube {
+	width: 50px;
+	height: 50px;
+	transition-duration: 0.4;
+	border-radius: 50%;
+}
+
+.youtube:hover {
+	background-color: #FF0000;
+}
+.twitter {
+	width: 50px;
+	height: 50px;
+	transition-duration: 0.4;
+	border-radius: 70%;
+}
+
+.twitter:hover {
+	background-color: #00acee;
+}
+
+.facebook {
+	width: 50px;
+	height: 50px;
+	transition-duration: 0.4;
+	border-radius: 50%;
+}
+
+.facebook:hover {
+	background-color: #3b5998;
+}
+
+.instagram {
+	width: 50px;
+	height: 50px;
+	transition-duration: 0.4;
+	border-radius: 50%;
+}
+
+.instagram:hover {
+	background: #f09433;
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+}
+
+.apple {
+	width: 50px;
+	height: 50px;
+	transition-duration: 0.4;
+	border-radius: 50%;
+}
+
+.apple:hover {
+	background-image: linear-gradient(-45deg, #35C3F3 0%, #8b9fe8 20%, #e681d8 39%, #ffa9a4 76%, #FED2CE 100%);
+
+}
+nav ul li a {
+  transition: color 0.5s;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+/*         */
+/*  INDEX  */
+/*         */
+
+
+.index-about-heading {
+	font-size: 40px;
+	color: white;
+	background-color: rgb(48, 48, 48, 0.6);
+	align-content: left;
+	width: 43%;
+	margin-left: 15%;
+	margin-top: 13px;
+	border: 3px solid #750606;
+	text-align: center;
+}
+
+.index-about-text {
+	font-size: 30px;
+	color: white;
+	background-color: rgb(48, 48, 48, 0.6);
+	align-content: left;
+	width: 43%;
+	margin-left: 15%;
+	border: 3px solid #750606;
+}
+
+.album {
+	margin-left: 16.5%;
+}
+
+.index-refs {
+	color:white;
+	transition-duration: 0.4s;
+}
+
+.index-refs:hover {
+	color: red;
+}
+
+.ytvid {
+	width: 896;
+	height: 504;
+	margin-left: 70%;
+	position: absolute;
+	border: 3px solid #750606;
+}
+
+/*         */
+/*  ABOUT  */
+/*         */
+
+
+.songs {
+	margin-left: 21%;
+
+}
+
+#toggle {
+  margin-top: 10px;
+}
+
+
+.about-heading p {
+	font-size: 40px;
+	color: white;
+	background-color: rgb(48, 48, 48, 0.6);
+	align-content: left;
+	width: 43%;
+	margin-left: 15%;
+	margin-top: 10px;
+	border: 3px solid black;
+	text-align: center;
+}
+
+.about-text {
+	font-size: 30px;
+	color: white;
+	background-color: rgb(48, 48, 48, 0.6);
+	align-content: left;
+	width: 43%;
+	margin-left: 15%;
+	border: 3px solid black;
+ }
+
+.button1 {
+	color: #303030;
+	border: none;
+	font-size: 20px;
+	background-color: white;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	border-radius: 8px;
+	border: 2px solid #303030;
+}
+
+.button1:hover {
+	background-color: #303030;
+	color: white;
+}
+
+
+.about-discography {
+	color: white;
+	font-size: 25px;
+	align-content: center;
+	text-align: center;
+	background-color: rgb(48, 48, 48, 0.6);
+	border: 3px solid black;
+	margin-top: 10px;
+	margin-left: 10%;
+	width: 83%;
+}
+
+.album-cover img {
+	height: 200px;
+	width: 200px;
+}
+
+
+/*         */
+/*  TOURS  */
+/*         */
+
+
+.tourtable {
+	color: black;
+	font-size: 40px;
+	align-content: center;
+	background-color: rgb(128, 128, 128, 0.6);
+	border: 3px solid black;
+	margin: auto;
+	width: 60%;
+}
+
+.caption {
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #810e0e;
+  box-shadow: 0px 0px 10px 0px rgb(14, 14, 14, 0.45);
+  font-weight: 600;
+  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
+}
+
+
+
+/*         */
+/* MEMBERS */
+/*         */
+
+.infobox {
+	background-color: #303030;
+	border-radius: 3px;
+    border-style: solid;
+    clear: right;
+    float: right;
+	border-color: #750606;
+	border-width: 3px;
+	margin-right: 20rem;
+    width: 300px;
+	align-items: center;
+	justify-content: center;
+	padding: 3px;
+	text-align: center;
+}
+
+.infobox-img {
+	max-width: 100%;
+	max-height: 100%;
+	margin-bottom: 10px;
+}
+
+.infobox-heading {
+	align-items: center;
+	width: 300px;
+	border-color: 750606;
+	border-width: 8px;
+	background-color: #750606;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+}
+
+.infobox-text p {
+	line-height: 0.6;
+	color: white;
+	margin-left: 5px;
+}
+
+.infobox-bottom {
+	height: 18px;
+	border-bottom: 3px solid #750606;
+}
+
+.heading-line {
+	border-bottom: 3px solid #750606;
+}
+
+.members-text {
+	font-size: 26px;
+	color: white;
+	background-color: rgb(48, 48, 48, 0.6);
+	align-content: left;
+	width: 43%;
+	margin-left: 15%;
+	border: 3px solid #750606;
+}
+
+.members-tabs {
+	display: flex;
+	position: relative;
+	line-height: 14px;
+	list-style: none;
+	padding: 10px 16px;
+	font-size: 16px;
+	background-color: #303030;
+	border: none;
+	color: white;
+	align-content: center;
+	cursor: pointer;
+}
+
+.members-current {
+	font-size: 15px;
+	color: red;
+}
+
+.index-refs {
+	color:white;
+	transition-duration: 0.4s;
+}
+
+.index-refs:hover {
+	color: red;
+}

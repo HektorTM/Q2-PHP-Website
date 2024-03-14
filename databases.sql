@@ -1,0 +1,57 @@
+-- CART --
+CREATE TABLE `cart` (
+	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`user_id` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+	`product_id` INT(10) UNSIGNED NULL DEFAULT NULL,
+	`quantity` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+	`created` DATETIME NOT NULL DEFAULT current_timestamp(),
+	PRIMARY KEY (`id`) USING BTREE,
+	UNIQUE INDEX `product_id_user_id` (`product_id`, `user_id`) USING BTREE,
+	INDEX `user_id` (`user_id`) USING BTREE,
+	CONSTRAINT `FK_cart_product` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON UPDATE CASCADE ON DELETE SET NULL
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=254
+;
+
+-- PRODUCTS -- 
+CREATE TABLE `products` (
+	`id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`title` VARCHAR(255) NOT NULL DEFAULT '0' COLLATE 'utf8mb4_general_ci',
+	`description` TEXT NOT NULL COLLATE 'utf8mb4_general_ci',
+	`price` INT(10) UNSIGNED NOT NULL DEFAULT '0',
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=9
+;
+
+INSERT INTO `products` (`id`, `title`, `description`, `price`) VALUES (1, 'Double Portrait Tour 2023 T-Shirt', 'BLACK T-SHIRT WITH SLIPKNOT LOGO, 9 POINT STAR, AND BAND MASK PHOTOS ON FRONT AND SLIPKNOT LOGO, TRIBAL S LOGO AND 2023 TOUR CITIES LISTED ON BACK.', 4000);
+INSERT INTO `products` (`id`, `title`, `description`, `price`) VALUES (2, 'Goat Star Tour 2023 T-Shirt', 'GRAY T-SHIRT WITH SLIPKNOT LOGO AND GOAT AND 9 POINT STAR GRAPHIC ON FRONT AND 9 POINT STAR GRAPHIC WITH 2023 TOUR CITIES LISTED ON BACK.', 4000);
+INSERT INTO `products` (`id`, `title`, `description`, `price`) VALUES (3, 'Repeat Glitch Tour 2023 T-Shirt', 'BLACK T-SHIRT WITH SLIPKNOT LOGO, BAND IMAGE AND "TOUR 2023" ON FRONT AND TRIBAL S LOGO WITH 2023 TOUR CITIES LITSED ON BACK.', 4000);
+INSERT INTO `products` (`id`, `title`, `description`, `price`) VALUES (4, 'Iowa Translucent Green Vinyl', 'PLEASE NOTE THAT EACH VINYL IS UNIQUE AND THE COLORS MAY APPEAR SLIGHTLY DIFFERENT FROM THE IMAGE DISPLAYED.', 2998);
+INSERT INTO `products` (`id`, `title`, `description`, `price`) VALUES (5, 'Vol.3: The Subliminal Verses Vinyl', 'PLEASE NOTE THAT EACH VINYL IS UNIQUE AND THE COLORS MAY APPEAR SLIGHTLY DIFFERENT FROM THE IMAGE DISPLAYED.', 2998);
+INSERT INTO `products` (`id`, `title`, `description`, `price`) VALUES (6, 'All Hope Is Gone Neon Yellow Vinyl', 'PLEASE NOTE THAT EACH VINYL IS UNIQUE AND THE COLORS MAY APPEAR SLIGHTLY DIFFERENT FROM THE IMAGE DISPLAYED.', 2998);
+INSERT INTO `products` (`id`, `title`, `description`, `price`) VALUES (7, 'We Are Not Your Kind Clear Vinyl', 'PLEASE NOTE THAT EACH VINYL IS UNIQUE AND THE COLORS MAY APPEAR SLIGHTLY DIFFERENT FROM THE IMAGE DISPLAYED.', 2998);
+
+
+
+-- USERS --
+CREATE TABLE `users` (
+	`id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+	`username` VARCHAR(255) NOT NULL DEFAULT '0' COLLATE 'utf8mb4_general_ci',
+	`password` VARCHAR(255) NOT NULL DEFAULT '0' COLLATE 'utf8mb4_general_ci',
+	PRIMARY KEY (`id`) USING BTREE,
+	UNIQUE INDEX `username` (`username`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=6
+;
+
+
+
+
+
